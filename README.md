@@ -62,30 +62,38 @@ where `a` is the minimum support and `b` is the maximum support. The parameters 
 
 <!-- Package usage documentation. -->
 
-<section class="installation">
 
-## Installation
-
-```bash
-npm install @stdlib/stats-base-dists-discrete-uniform-mgf
-```
-
-Alternatively,
-
--   To load the package in a website via a `script` tag without installation and bundlers, use the [ES Module][es-module] available on the [`esm` branch][esm-url].
--   If you are using Deno, visit the [`deno` branch][deno-url].
--   For use in Observable, or in browser/node environments, use the [Universal Module Definition (UMD)][umd] build available on the [`umd` branch][umd-url].
-
-The [branches.md][branches-url] file summarizes the available branches and displays a diagram illustrating their relationships.
-
-</section>
 
 <section class="usage">
 
 ## Usage
 
+To use in Observable,
+
 ```javascript
-var mgf = require( '@stdlib/stats-base-dists-discrete-uniform-mgf' );
+mgf = require( 'https://cdn.jsdelivr.net/gh/stdlib-js/stats-base-dists-discrete-uniform-mgf@umd/browser.js' )
+```
+
+To vendor stdlib functionality and avoid installing dependency trees for Node.js, you can use the UMD server build:
+
+```javascript
+var mgf = require( 'path/to/vendor/umd/stats-base-dists-discrete-uniform-mgf/index.js' )
+```
+
+To include the bundle in a webpage,
+
+```html
+<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/stats-base-dists-discrete-uniform-mgf@umd/browser.js"></script>
+```
+
+If no recognized module system is present, access bundle contents via the global scope:
+
+```html
+<script type="text/javascript">
+(function () {
+    window.mgf;
+})();
+</script>
 ```
 
 #### mgf( t, a, b )
@@ -163,10 +171,15 @@ y = mymgf( 1.1 );
 
 <!-- eslint no-undef: "error" -->
 
-```javascript
-var randint = require( '@stdlib/random-base-discrete-uniform' );
-var randu = require( '@stdlib/random-base-randu' );
-var mgf = require( '@stdlib/stats-base-dists-discrete-uniform-mgf' );
+```html
+<!DOCTYPE html>
+<html lang="en">
+<body>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/random-base-discrete-uniform@umd/browser.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/random-base-randu@umd/browser.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/stats-base-dists-discrete-uniform-mgf@umd/browser.js"></script>
+<script type="text/javascript">
+(function () {
 
 var randa = randint.factory( 0, 5 );
 var randb = randint.factory();
@@ -183,6 +196,11 @@ for ( i = 0; i < 10; i++ ) {
     v = mgf( t, a, b );
     console.log( 't: %d, a: %d, b: %d, M_X(t;a,b): %d', t.toFixed( 4 ), a.toFixed( 4 ), b.toFixed( 4 ), v.toFixed( 4 ) );
 }
+
+})();
+</script>
+</body>
+</html>
 ```
 
 </section>
