@@ -4,7 +4,29 @@
 
 <section class="release" id="unreleased">
 
-## Unreleased (2024-12-01)
+## Unreleased (2025-01-11)
+
+<section class="features">
+
+### Features
+
+-   [`946e2c3`](https://github.com/stdlib-js/stdlib/commit/946e2c3b7603a12215404642580a545e641acb02) - add C implementation for `stats/base/dists/discrete-uniform/mgf` [(#4667)](https://github.com/stdlib-js/stdlib/pull/4667)
+
+</section>
+
+<!-- /.features -->
+
+<section class="issues">
+
+### Closed Issues
+
+This release closes the following issue:
+
+[#3556](https://github.com/stdlib-js/stdlib/issues/3556)
+
+</section>
+
+<!-- /.issues -->
 
 <section class="commits">
 
@@ -12,6 +34,7 @@
 
 <details>
 
+-   [`946e2c3`](https://github.com/stdlib-js/stdlib/commit/946e2c3b7603a12215404642580a545e641acb02) - **feat:** add C implementation for `stats/base/dists/discrete-uniform/mgf` [(#4667)](https://github.com/stdlib-js/stdlib/pull/4667) _(by Prashant Kumar Yadav, Philipp Burckhardt)_
 -   [`31fd427`](https://github.com/stdlib-js/stdlib/commit/31fd42744ec5d7073041f97c6f72350b8005c0fc) - **style:** remove unwanted empty lines _(by Philipp Burckhardt)_
 
 </details>
@@ -24,9 +47,10 @@
 
 ### Contributors
 
-A total of 1 person contributed to this release. Thank you to this contributor:
+A total of 2 people contributed to this release. Thank you to the following contributors:
 
 -   Philipp Burckhardt
+-   Prashant Kumar Yadav
 
 </section>
 
