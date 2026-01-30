@@ -69,13 +69,13 @@ where `a` is the minimum support and `b` is the maximum support. The parameters 
 ## Usage
 
 ```javascript
-import mgf from 'https://cdn.jsdelivr.net/gh/stdlib-js/stats-base-dists-discrete-uniform-mgf@esm/index.mjs';
+import mgf from 'https://cdn.jsdelivr.net/gh/stdlib-js/stats-base-dists-discrete-uniform-mgf@v0.3.0-esm/index.mjs';
 ```
 
 You can also import the following named exports from the package:
 
 ```javascript
-import { factory } from 'https://cdn.jsdelivr.net/gh/stdlib-js/stats-base-dists-discrete-uniform-mgf@esm/index.mjs';
+import { factory } from 'https://cdn.jsdelivr.net/gh/stdlib-js/stats-base-dists-discrete-uniform-mgf@v0.3.0-esm/index.mjs';
 ```
 
 #### mgf( t, a, b )
@@ -161,7 +161,7 @@ y = mymgf( 1.1 );
 
 import randint from 'https://cdn.jsdelivr.net/gh/stdlib-js/random-base-discrete-uniform@esm/index.mjs';
 import randu from 'https://cdn.jsdelivr.net/gh/stdlib-js/random-base-randu@esm/index.mjs';
-import mgf from 'https://cdn.jsdelivr.net/gh/stdlib-js/stats-base-dists-discrete-uniform-mgf@esm/index.mjs';
+import mgf from 'https://cdn.jsdelivr.net/gh/stdlib-js/stats-base-dists-discrete-uniform-mgf@v0.3.0-esm/index.mjs';
 
 var randa = randint.factory( 0, 5 );
 var randb = randint.factory();
