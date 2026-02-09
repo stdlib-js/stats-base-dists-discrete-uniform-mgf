@@ -1,44 +1,7 @@
+"use strict";var s=function(e,r){return function(){return r||e((r={exports:{}}).exports,r),r.exports}};var o=s(function(j,c){
+var f=require('@stdlib/math-base-assert-is-integer/dist'),a=require('@stdlib/math-base-assert-is-nan/dist'),q=require('@stdlib/math-base-special-expm1/dist'),y=require('@stdlib/math-base-special-exp/dist');function I(e,r,n){var u,i;return a(e)||a(r)||a(n)||!f(r)||!f(n)||r>n?NaN:e===0?1:(i=n-r+1,u=y(e*r)*q(e*i),u/=i*q(e),u)}c.exports=I
+});var m=s(function(k,N){
+var d=require('@stdlib/utils-constant-function/dist'),p=require('@stdlib/math-base-assert-is-integer/dist'),v=require('@stdlib/math-base-assert-is-nan/dist'),x=require('@stdlib/math-base-special-expm1/dist'),l=require('@stdlib/math-base-special-exp/dist');function F(e,r){var n;if(v(e)||v(r)||!p(e)||!p(r)||e>r)return d(NaN);return n=r-e+1,u;function u(i){var t;return v(i)?NaN:i===0?1:(t=l(i*e)*x(i*n),t/=n*x(i),t)}}N.exports=F
+});var O=require('@stdlib/utils-define-nonenumerable-read-only-property/dist'),g=o(),R=m();O(g,"factory",R);module.exports=g;
 /** @license Apache-2.0 */
-
-'use strict';
-
-/**
-* Evaluate the moment-generating function (MGF) of a discrete uniform distribution.
-*
-* @module @stdlib/stats-base-dists-discrete-uniform-mgf
-*
-* @example
-* var mgf = require( '@stdlib/stats-base-dists-discrete-uniform-mgf' );
-*
-* var y = mgf( 2.0, 0, 4 );
-* // returns ~689.475
-*
-* y = mgf( -0.2, 0, 4 );
-* // returns ~0.697
-*
-* y = mgf( 2.0, 0, 1 );
-* // returns ~4.195
-*
-* var mymgf = mgf.factory( 6, 7 );
-* y = mymgf( 0.1 );
-* // returns ~1.918
-*
-* y = mymgf( 1.1 );
-* // returns ~1471.722
-*/
-
-// MODULES //
-
-var setReadOnly = require( '@stdlib/utils-define-nonenumerable-read-only-property/dist' );
-var main = require( './main.js' );
-var factory = require( './factory.js' );
-
-
-// MAIN //
-
-setReadOnly( main, 'factory', factory );
-
-
-// EXPORTS //
-
-module.exports = main;
+//# sourceMappingURL=index.js.map
