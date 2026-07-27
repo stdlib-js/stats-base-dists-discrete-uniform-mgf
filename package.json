@@ -92,7 +92,8 @@
     "generating functions",
     "moments",
     "uniform",
-    "discrete"
+    "discrete",
+    "univariate"
   ],
   "funding": {
     "type": "opencollective",
